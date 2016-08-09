@@ -8,8 +8,13 @@ public class TestClass {
         //ApplicationContext ctx = new ClassPathXmlApplicationContext("com/springinaction/springidol/spring-idol.xml");
         ApplicationContext ctx = new ClassPathXmlApplicationContext("spring-idol.xml");
 
-        Performer performer = (Performer)ctx.getBean("duke");
+//        Performer performer = (Performer)ctx.getBean("duke");
+//        performer.perform();
+//
+//        Performer performerUsingConstructor = (Performer)ctx.getBean("dukeUsingConstructor");
+//        performerUsingConstructor.perform();
 
-        performer.perform();
+        Performer performerPoeticDuke = (Performer)ctx.getBean("poeticDuke");
+        performerPoeticDuke.perform();
     }
 }
