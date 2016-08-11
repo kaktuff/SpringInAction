@@ -14,7 +14,8 @@
     </bean>
 
 
-    <bean id = "sonnet29" class="com.springinaction.springidol.Sonnet29"/>
+    <bean id = "sonnet29"
+          class="com.springinaction.springidol.Sonnet29"/>
 
 
     <bean id="poeticDuke"
@@ -27,4 +28,24 @@
           class = "com.springinaction.springidol.Stage"
           factory-method="getStage"/>
 
+    <bean id ="auditorium"
+          class = "com.springinaction.springidol.Auditorium"
+          init-method="turnOnLights"
+          destroy-method="turnOffLights"
+    />
+
+    <bean id = "saxophone"
+          class="com.springinaction.springidol.Saxophone"
+    />
+
+    <bean id="kenny"
+          class="com.springinaction.springidol.Instrumentalist">
+        <property name="song" value="Jingle Bells" />
+        <property name="age" value="37" />
+        <property name="instrument" ref="saxophone"/>
+    </bean>
+
+    <bean id = "paino"
+          class="com.springinaction.springidol.Piano"
+    />
 </beans>

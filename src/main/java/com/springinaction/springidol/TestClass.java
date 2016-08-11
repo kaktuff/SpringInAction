@@ -13,8 +13,11 @@ public class TestClass {
 //
 //        Performer performerUsingConstructor = (Performer)ctx.getBean("dukeUsingConstructor");
 //        performerUsingConstructor.perform();
+//
+//        Performer performerPoeticDuke = (Performer)ctx.getBean("poeticDuke");
+//        performerPoeticDuke.perform();
 
-        Performer performerPoeticDuke = (Performer)ctx.getBean("poeticDuke");
-        performerPoeticDuke.perform();
+        Performer kenny = (Performer)ctx.getBean("kenny");
+        kenny.perform();
     }
 }
