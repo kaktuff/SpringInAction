@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation=" http://www.springframework.org/schema/beans
                             http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
@@ -47,5 +48,26 @@
 
     <bean id = "paino"
           class="com.springinaction.springidol.Piano"
+    />
+
+    <bean id="kennyOwnSax"
+          class="com.springinaction.springidol.Instrumentalist">
+        <property name="song" value="Jingle Bells"/>
+        <property name="instrument">
+            <bean class="com.springinaction.springidol.Saxophone"/>
+        </property>
+    </bean>
+
+    <bean id="dukeOwnPoem"
+          class="com.springinaction.springidol.PoeticJuggler">
+        <constructor-arg value="15"/>
+        <constructor-arg>
+            <bean class="com.springinaction.springidol.Sonnet29"/>
+        </constructor-arg>
+    </bean>
+
+    <bean id="kennyPspace"
+          class="com.springinaction.springidol.Instrumentalist"
+          p:song="Jingle Bells"
     />
 </beans>
