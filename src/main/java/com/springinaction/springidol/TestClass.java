@@ -17,7 +17,16 @@ public class TestClass {
 //        Performer performerPoeticDuke = (Performer)ctx.getBean("poeticDuke");
 //        performerPoeticDuke.perform();
 
-        Performer kenny = (Performer)ctx.getBean("kenny");
-        kenny.perform();
+//        Performer kenny = (Performer)ctx.getBean("kenny");
+//        kenny.perform();
+
+//        Performer kennyPspace = (Performer)ctx.getBean("kennyPspace");
+//        kennyPspace.perform();
+
+//        Performer hankVone = (Performer)ctx.getBean("hankVone");
+//        hankVone.perform();
+
+        Performer hankVTwo = (Performer)ctx.getBean("hankVTwo");
+        hankVTwo.perform();
     }
 }

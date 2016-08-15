@@ -46,7 +46,7 @@
         <property name="instrument" ref="saxophone"/>
     </bean>
 
-    <bean id = "paino"
+    <bean id = "piano"
           class="com.springinaction.springidol.Piano"
     />
 
@@ -69,5 +69,28 @@
     <bean id="kennyPspace"
           class="com.springinaction.springidol.Instrumentalist"
           p:song="Jingle Bells"
+          p:instrument-ref ="saxophone"
     />
+
+    <bean id = "hankVone"  class="com.springinaction.springidol.OneManBandVOne">
+        <property name="instruments">
+            <list>
+                <ref bean="piano"/>
+                <ref bean="saxophone"/>
+                <ref bean="guitar"/>
+            </list>
+        </property>
+    </bean>
+
+    <bean id = "guitar" class="com.springinaction.springidol.Guitar"/>
+
+    <bean id="hankVTwo" class="com.springinaction.springidol.OneManBandVTwo">
+        <property name="instruments">
+            <map>
+                <entry key="GUITAR" value-ref="guitar"/>
+                <entry key="SAXOPHONE" value-ref="saxophone"/>
+                <entry key="PIANO" value-ref="piano"/>
+            </map>
+        </property>
+    </bean>
 </beans>
