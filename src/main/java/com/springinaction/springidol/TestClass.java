@@ -26,7 +26,10 @@ public class TestClass {
 //        Performer hankVone = (Performer)ctx.getBean("hankVone");
 //        hankVone.perform();
 
-        Performer hankVTwo = (Performer)ctx.getBean("hankVTwo");
-        hankVTwo.perform();
+//        Performer hankVTwo = (Performer)ctx.getBean("hankVTwo");
+//        hankVTwo.perform();
+
+        Performer hankVThree = (Performer)ctx.getBean("hankVThree");
+        hankVThree.perform();
     }
 }

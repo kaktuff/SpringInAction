@@ -93,4 +93,14 @@
             </map>
         </property>
     </bean>
+
+    <bean id ="hankVThree" class="com.springinaction.springidol.OneManBandVThree">
+        <property name="instruments">
+            <props>
+                <prop key="GUITAR">GuitarValue</prop>
+                <prop key="SAXOPHONE">SaxophoneValue</prop>
+                <prop key="PIANO">PianoValue</prop>
+            </props>
+        </property>
+    </bean>
 </beans>
