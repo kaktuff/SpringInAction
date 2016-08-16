@@ -41,7 +41,7 @@
 
     <bean id="kenny"
           class="com.springinaction.springidol.Instrumentalist">
-        <property name="song" value="Jingle Bells" />
+        <property name="song" value="Kenny Jingle Bells" />
         <property name="age" value="37" />
         <property name="instrument" ref="saxophone"/>
     </bean>
@@ -101,6 +101,13 @@
                 <prop key="SAXOPHONE">SaxophoneValue</prop>
                 <prop key="PIANO">PianoValue</prop>
             </props>
+        </property>
+    </bean>
+
+    <bean id="karl" class="com.springinaction.springidol.Instrumentalist">
+        <property name="song" value="#{kenny.song}"/>
+        <property name="instrument">
+            <bean class="com.springinaction.springidol.Saxophone"/>
         </property>
     </bean>
 </beans>
