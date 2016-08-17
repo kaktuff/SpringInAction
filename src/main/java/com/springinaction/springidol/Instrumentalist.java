@@ -2,7 +2,6 @@ package com.springinaction.springidol;
 
 public class Instrumentalist implements Performer{
     private String song;
-//    public String song;
     private Instrument instrument;
     private int age;
 
