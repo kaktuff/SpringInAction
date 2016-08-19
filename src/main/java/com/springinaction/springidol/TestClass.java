@@ -59,12 +59,28 @@ public class TestClass {
 //        ClassStringParameter homePath = (ClassStringParameter)ctx.getBean("homePath");
 //        System.out.println("homePath.getStringParam() - " + homePath.getStringParam());
 
-        Person personLastElCollect = (Person)ctx.getBean("personLastElCollect");
-        System.out.println("personLastElCollect.city: " + personLastElCollect.getCity());
+//        Person personLastElCollect = (Person)ctx.getBean("personLastElCollect");
+//        System.out.println("personLastElCollect.city: " + personLastElCollect.getCity());
+//
+//        Person personFirsttElCollect = (Person)ctx.getBean("personFirsttElCollect");
+//        System.out.println("personFirsttElCollect.city: " + personFirsttElCollect.getCity());
 
-        Person personFirsttElCollect = (Person)ctx.getBean("personFirsttElCollect");
-        System.out.println("personFirsttElCollect.city: " + personFirsttElCollect.getCity());
+//        Governor governor = (Governor)ctx.getBean("governor");
+//        // выведем все имена
+//        for(String name:governor.getCityNames()){
+//            System.out.println(name);
+//        }
 
+//        Governor governorNameState = (Governor)ctx.getBean("governorNameState");
+//        // выведем все имена
+//        for(String name:governorNameState.getCityNames()){
+//            System.out.println(name);
+//        }
 
+        Governor governorBigCityNameState = (Governor)ctx.getBean("governorBigCityNameState");
+        // выведем все имена
+        for(String name:governorBigCityNameState.getCityNames()){
+            System.out.println(name);
+        }
     }
 }
